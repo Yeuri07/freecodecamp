@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosgresSQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            PostgreSQL
+        </header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#¿Qué_es_posgreSQL?" class="nav-link">¿Qué es posgreSQL?</a></li>
+            <li><a href="#Objectivos" class="nav-link">Objectivos</a></li>
+            <li><a href="#CRUD" class="nav-link">CRUD</a></li>
+            <li><a href="#Comandos" class="nav-link">Comandos</a></li>
+            <li><a href="#Selecionar_datos" class="nav-link">Selecionar datos</a></li>
+            <li><a href="#Insertar_datos" class="nav-link">Insertar datos</a></li>
+            <li><a href="#Ejemplo_insertar_datos" class="nav-link">Ejemplo insertar datos</a></li>
+            <li><a href="#Actualizar_datos" class="nav-link">Actualizar datos</a></li>
+            <li><a href="#Eliminar_datos" class="nav-link">Eliminar datos</a></li>
+            <li><a href="#Conectar_posgres_con_java" class="nav-link">Conectar posgres con java</a></li>
+            <li><a href="#Referencia" class="nav-link">Referencia</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+
+            <header>Introduction</header>
+            <article>
+                <p>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto. Fue desarrollado
+                    originalmente en 1986 como parte del proyecto POSTGRES en la Universidad de California, Berkeley, y
+                    ha
+                    sido ampliamente utilizado desde entonces.</p>
+
+                <ul>
+                    <li>PostgreSQL destaca por su robustez y flexibilidad, lo que lo convierte en una opción popular
+                        para
+                        aplicaciones empresariales y de desarrollo web.</li>
+                    <li>Además, cuenta con una gran cantidad de características avanzadas, como soporte para
+                        transacciones,
+                        vistas, procedimientos almacenados y lenguajes de consulta.</li>
+                    <li>en resumen, PostgreSQL es un sistema de gestión de bases de datos altamente confiable y potente.
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="¿Qué_es_posgreSQL?">
+            <header>¿Qué es posgreSQL?</header>
+
+            <article>
+                <p>PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto. Se utiliza para
+                    almacenar y recuperar datos de manera rápida y confiable. PostgreSQL es muy popular debido a su alta
+                    flexibilidad y rendimiento, así como a su cumplimiento con los estándares de la industria y su
+                    licencia
+                    de código abierto, lo que permite a los usuarios modificar y distribuir el código fuente. Además,
+                    PostgreSQL ofrece una amplia variedad de características avanzadas, como una gestión de
+                    transacciones
+                    completa, herramientas de replicación y respaldo, y un lenguaje de consulta poderoso llamado SQL.
+                </p>
+                <p>La importancia de PostgreSQL radica en su capacidad para proporcionar un almacenamiento confiable y
+                    de
+                    alta calidad para una amplia variedad de aplicaciones. Gracias a su alto rendimiento y flexibilidad,
+                    PostgreSQL es una excelente opción tanto para aplicaciones empresariales como para aplicaciones web
+                    y
+                    móviles. Además, su licencia de código abierto permite a los desarrolladores modificar y distribuir
+                    el
+                    código fuente, lo que facilita la integración con otros sistemas y plataformas. En resumen,
+                    PostgreSQL
+                    es una herramienta valiosa para cualquier persona o empresa que necesite un sistema de gestión de
+                    bases
+                    de datos fiable y de alta calidad.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Objectivos">
+
+            <header>Objectivos</header>
+            <article>
+                <p> PostgreSQL es proporcionar un sistema de gestión de bases de datos de alta calidad y rendimiento.
+                </p>
+                <ul>
+                    <li>Un objetivo específico de PostgreSQL en este sentido podría ser mejorar constantemente el
+                        rendimiento del sistema mediante el uso de algoritmos y técnicas eficientes para el
+                        almacenamiento y
+                        recuperación de datos.</li>
+                    <li>Otro objetivo general de PostgreSQL podría ser cumplir con los estándares de la industria en
+                        cuanto
+                        a la gestión de bases de datos.</li>
+                    <li>Un objetivo específico en este sentido podría ser asegurarse de que PostgreSQL sea compatible
+                        con
+                        los estándares SQL más recientes y ofrezca una amplia gama de características y funcionalidades
+                        que
+                        cumplan con estos estándares.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="CRUD">
+
+            <header>CRUD</header>
+
+            <article>
+                <p>CRUD es un acrónimo que se refiere a las cuatro operaciones básicas que se realizan en una base de
+                    datos:
+                    Create (Crear), Read (Leer), Update (Actualizar) y Delete (Borrar). Estas operaciones se utilizan
+                    para
+                    gestionar y manipular los datos almacenados en una base de datos.</p>
+                <p>La operación Create se utiliza para agregar nuevos datos a la base de datos, como cuando se inserta
+                    una
+                    nueva fila en una tabla. La operación Read se utiliza para recuperar datos de la base de datos, como
+                    cuando se ejecuta una consulta para obtener información de una tabla. La operación Update se utiliza
+                    para modificar los datos existentes en la base de datos, como cuando se cambia el valor de una
+                    columna
+                    en una fila de una tabla. Y por último, la operación Delete se utiliza para eliminar datos de la
+                    base de
+                    datos, como cuando se borra una fila de una tabla.</p>
+                <ul>
+                    <li>las operaciones CRUD se utilizan para gestionar y manipular los datos almacenados en una base de
+                        datos de manera eficiente y confiable. Estas operaciones son una parte fundamental de cualquier
+                        sistema de gestión de bases de datos, incluyendo PostgreSQL.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Comandos">
+            <header>Comandos</header>
+
+            <article>
+                <p>En el contexto de PostgreSQL, los comandos son instrucciones o sentencias que se utilizan para
+                    realizar
+                    operaciones en la base de datos. Estos comandos se escriben en el lenguaje de consulta SQL y se
+                    utilizan
+                    para crear y modificar estructuras de datos, insertar y recuperar datos, y realizar otras
+                    operaciones en
+                    la base de datos. Algunos ejemplos de comandos comunes en PostgreSQL son:</p>
+                <ul>
+                    <li><span class="span_negro">SELECT:</span> utilizado para recuperar datos de una o varias tablas de
+                        la base de datos.</li>
+                    <li><span class="span_negro">INSERT:</span> utilizado para agregar nuevos datos a una tabla de la
+                        base de datos.</li>
+                    <li><span class="span_negro">UPDATE:</span> utilizado para modificar datos existentes en una tabla
+                        de la base de datos.</li>
+                    <li><span class="span_negro">DELETE:</span> utilizado para eliminar datos de una tabla de la base de
+                        datos.</li>
+                    <li><span class="span_negro">CREATE TABLE:</span> utilizado para crear una nueva tabla en la base de
+                        datos.</li>
+                    <li><span class="span_negro">ALTER TABLE:</span> utilizado para modificar la estructura de una tabla
+                        existente en la base de datos.</li>
+                    <li><span class="span_negro">DROP TABLE:</span> utilizado para eliminar una tabla de la base de
+                        datos.</li>
+                </ul>
+                <p>Estos son solo algunos ejemplos de comandos en PostgreSQL. Existe una amplia variedad de comandos
+                    disponibles en el lenguaje SQL que se pueden utilizar para realizar diversas operaciones en una base
+                    de
+                    datos. Si deseas obtener más información sobre los comandos disponibles en PostgreSQL, te sugiero
+                    que
+                    consultes la documentación oficial o que busques tutoriales en línea que te ayuden a comenzar a
+                    trabajar
+                    con el lenguaje SQL.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Selecionar_datos">
+
+            <header>Selecionar datos</header>
+            <article>
+                <p>Para seleccionar datos de una tabla en una base de datos PostgreSQL, puede utilizar la declaración
+                    SELECT. La sintaxis básica de la declaración SELECT es la siguiente:
+
+                    <code><span class="code__blue">SELECT </span>column1, column2, ... <span class="code__blue"> FROM </span>table_name;</code>
+
+
+                    En esta declaración, column1, column2, etc. son las columnas que desea seleccionar de la tabla.
+                    Puede especificar cualquier número de columnas, separadas por comas. Si desea seleccionar todas las
+                    columnas de la tabla, puede usar el asterisco (*) en lugar de enumerar todas las columnas
+                    individualmente.
+
+                    Por ejemplo, si desea seleccionar todas las columnas de una tabla llamada customers, puede usar la
+                    siguiente declaración SELECT:
+                </p>
+
+                <code><span class="code__blue">SELECT</span> * <span class="code__blue"> FROM </span>customers;</code>
+                </p>
+
+                <p>Si desea seleccionar solo algunas columnas de la tabla, puede enumerarlas en lugar del asterisco:
+
+                    <code><span class="code__blue">SELECT </span>column1, column2, ... <span class="code__blue"> FROM </span>customers<span class="code__blue"> WHERE </span>email<span class="code__blue"> LIKE </span></span>email<span class="code__green"> '%@example.com';</span></code>
+
+                </p>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Insertar_datos">
+
+            <header>Insertar datos</header>
+
+            <p>Para insertar datos en una tabla de una base de datos PostgreSQL, puedes utilizar la sentencia INSERT
+                INTO. La sintaxis básica de esta sentencia es la siguiente:
+
+
+                <code><span class="code__blue">INSERT INTO</span> nombre_tabla (columna1, columna2, ...)
+                    VALUES (valor1, valor2, ...);</code>
+
+
+                Donde nombre_tabla es el nombre de la tabla a la que quieres insertar los datos, columna1, columna2,
+                etc.
+                son las columnas en las que quieres insertar los datos y valor1, valor2, etc. son los valores que
+                quieres insertar en cada columna.
+            </p>
+
+        </section>
+
+        <section class="main-section" id="Ejemplo_insertar_datos">
+
+            <header>Ejemplo insertar datos</header>
+            <article>
+                <p>ejemplo:
+
+
+                    <code><span class="code__blue">INSERT INTO</span> personas (nombre, edad)
+                    <span class="code__blue">VALUES</span> (<span class="code__green">'Juan'</span>,<span class="code__red">35</span> ),
+                           (<span class="code__green">'Ana'</span>, <span class="code__red">32</span>),
+                           (<span class="code__green">'Pablo'</span>,<span class="code__red">28</span>);</code>
+
+
+                    Es importante tener en cuenta que los valores deben tener el mismo tipo de datos que las columnas en
+                    las
+                    que se están insertando. Además, si una columna acepta valores NULL, debes utilizar la palabra clave
+                    NULL en lugar de un valor para insertar un valor NULL en esa columna.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Actualizar_datos">
+
+            <header>Actualizar datos</header>
+            <article>
+                <p>Para actualizar datos en una tabla de una base de datos PostgreSQL, puede utilizar la declaración
+                    UPDATE. La sintaxis básica de la declaración UPDATE es la siguiente:
+
+
+                    <code><span class="code__blue">UPDATE FROM</span> table_name<span class="code__blue"> SET</span>column1 = value1, column2 = value2, ...
+                    <span class="code__blue"> WHERE condition</span>;</code>
+
+
+                </p>
+
+                <p>Tenga en cuenta que la declaración UPDATE solo actualizará los datos existentes en la base de datos.
+                    No agregará nuevas filas a la tabla. Si desea agregar nuevos datos a la tabla, puede utilizar la
+                    declaración INSERT.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Eliminar_datos">
+
+            <header>Eliminar datos</header>
+            <article>
+                <p>Para eliminar datos de una tabla en una base de datos PostgreSQL, puede utilizar la declaración
+                    DELETE. La sintaxis básica de la declaración DELETE es la siguiente:
+
+
+                    <code><span class="code__blue">DELETE FROM</span> table_name
+                    <span class="code__blue">WHERE condition</span>;</code>
+
+
+                </p>
+
+                <p>En esta declaración, table_name es el nombre de la tabla de la que desea eliminar los datos y
+                    condition es una expresión que especifica qué filas deben eliminarse. Si omite la cláusula WHERE, se
+                    eliminarán todas las filas de la tabla.
+
+                    Por ejemplo, si desea eliminar todos los clientes con un correo electrónico que termina en
+                    @example.com, puede usar la siguiente declaración DELETE:
+                    <code><span class="code__blue">SELECT FROM </span>customers<span class="code__blue"> WHERE </span>email<span class="code__blue"> LIKE </span></span>email<span class="code__green"> '%@example.com';</span></code>
+                    Tenga en cuenta que una vez que elimina los datos de la base de datos, no puede recuperarlos.
+                    Asegúrese de tener una copia de seguridad de sus datos antes de eliminar cualquier cosa.
+
+                    Para obtener más información sobre cómo usar la declaración DELETE en PostgreSQL, consulte la
+                    documentación en línea de PostgreSQL.
+                </p>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Conectar_posgres_con_java">
+
+            <header>Conectar posgres con java</header>
+
+            <article>
+                <p>Para conectar una aplicación Java con una base de datos PostgreSQL, puedes utilizar la biblioteca
+                    JDBC
+                    (Java Database Connectivity). Esta es una API estándar que proporciona una forma consistente de
+                    conectarse a diferentes bases de datos desde Java.
+                    Para empezar a trabajar con JDBC y PostgreSQL, necesitarás tener lo siguiente:</p>
+
+                <ol>
+                    <li>Una instalación de PostgreSQL y una base de datos a la que te quieras conectar desde tu
+                        aplicación
+                        Java.</li>
+                    <li>La biblioteca JDBC de PostgreSQL, que puedes descargar desde la página de descargas de
+                        PostgreSQL.
+                    </li>
+                    <li>Una aplicación Java que utilice JDBC para conectarse a la base de datos.</li>
+                </ol>
+
+                <p> A continuación te presento un ejemplo de cómo puedes conectar tu aplicación Java con PostgreSQL
+                    utilizando JDBC:
+
+
+                    <code><span class="code__blue">import</span> java.sql.Connection;
+                    <span class="code__blue">import</span>  java.sql.DriverManager;
+                    <span class="code__blue">import</span>  java.sql.SQLException;
+                    
+                    <span class="code__blue">public class </span><span class="code__red">Main</span> {
+                        <span class="code__blue">public static void</span> <span class="code__red">main</span>(String[] args) {
+                            <span class="code__coment">// URL de conexión a la base de datos</span>
+                           <span class="code__rose">String url</span> = <span class="code__green">"jdbc:postgresql://host:port/database"</span>;
+                    
+                           <span class="code__coment">// Nombre de usuario y contraseña</span> 
+                           <span class="code__rose">String user</span> = <span class="code__green">"username"</span>;
+                           <span class="code__rose">String password</span> = <span class="code__green">"password"</span>;
+                    
+                            <span class="code__blue">try</span>{
+                                <span class="code__coment">// Crea la conexión a la base de datos</span>
+                                <span class="code__rose">Connection conn</span> = DriverManager.getConnection(url, user, password);
+                    
+                                <span class="code__coment">// Si la conexión se ha establecido correctamente, muestra un mensaje</span>
+                                System.out.println(<span class="code__green">"Conexión establecida con éxito"</span>);
+                            } <span class="code__blue">catch</span> (SQLException e) {
+                                <span class="code__coment">// En caso de error, muestra el mensaje de error</span>
+                                System.out.println(<span class="code__green">"Error al conectarse a la base de datos: "</span> + e.getMessage());
+                            }
+                        }
+                    }</code>
+
+
+                    Este es un ejemplo básico de cómo conectarte a una base de datos PostgreSQL desde Java utilizando
+                    JDBC.
+                    Para obtener más información sobre cómo trabajar con JDBC y realizar operaciones en la base de
+                    datos,
+                    puedes consultar la documentación de JDBC o buscar ejemplos en internet.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Referencia">
+
+            <header>Referencia</header>
+            <article>
+                <p>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto. Es uno de los
+                    sistemas de bases de datos más populares y potentes disponibles, y es utilizado en una amplia
+                    variedad de aplicaciones y entornos.</p>
+                <p>Algunas de las principales características de PostgreSQL incluyen:</p>
+                <ul>
+                    <li>Soporte para una amplia variedad de tipos de datos, incluyendo enteros, flotantes, cadenas,
+                        fechas y horas, y objetos JSON.</li>
+                    <li>Indices y consultas optimizadas para mejorar el rendimiento de las consultas.</li>
+                    <li>Transacciones para garantizar la integridad de los datos.</li>
+                    <li>Replicación para permitir la replicación de datos entre servidores y el balanceo de carga.</li>
+                    <li>Integración con otros lenguajes de programación, como Python, Java, y C++.</li>
+                    <li>Una amplia documentación y una gran comunidad de usuarios y desarrolladores.</li>
+                </ul>
+                <p>Para obtener más información sobre PostgreSQL, puedes consultar la documentación oficial en el
+                    siguiente enlace:</p>
+                <a href="https://www.postgresql.org/docs/">https://www.postgresql.org/docs/</a>
+
+                <p>También puedes encontrar una gran cantidad de recursos y tutoriales en internet sobre cómo trabajar
+                    con PostgreSQL y cómo aprovechar al máximo sus características.</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
