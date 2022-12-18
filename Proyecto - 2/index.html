@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Formulario de encuesta Artes Gráficas </h1>
+        <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+    </header>
+
+    <form id="survey-form">
+
+        <div class="div box1">
+            <label id="name-label">Nombre</label>
+            <input class="input" type="text" id="name" placeholder="Introduzca su nombre" required>
+
+            <label id="email-label">Email</label>
+            <input class="input" type="email" id="email" placeholder="Introduzca su correo eletrónico" required>
+
+            <label id="number-label">Edad</label>
+            <input class="input" type="number" name="" id="number" min="10" max="100" required placeholder="Edad">
+
+            <select name="" id="dropdown" class="input2">
+                <option disabled selected value="">Genero</option>
+                <option value="">Hombre</option>
+                <option value="">Mujer</option>
+                <option value="">Otros</option>
+            </select>
+
+        </div>
+
+        <div class="div box2">
+            <p>¿Recomendarías Artes Gráficas a un amigo?</p>
+            <label> <input type="radio" name="btn-radio" value="#">Definitivamente</label>
+            <label>
+                <input type="radio" name="btn-radio" value="#">Quizás</label>
+            <label><input type="radio" name="btn-radio" value="#">No</label>
+
+        </div>
+
+        <div class="div box3">
+            <p>¿Que es lo que mas te gusta de Artes Gráficas?</p>
+
+            <select class="input2" name="" id="dropdown">
+
+                <option disabled selected value="">Seleccione una opción</option>
+                <option value="#" class="input-radius">Diseño</option>
+                <option value="#" class="input-radius">Hacer articulos</option>
+                <option value="#" class="input-radius">Logos tipos</option>
+            </select>
+        </div>
+
+        <div class="div box4">
+            <p>¿Que quieres lograr en Artes Gráficas?</p>
+            <label><input type="checkbox" value="#">Ser un buen Diseñador</label>
+            <label><input type="checkbox" value="#">Trabajar en equipo</label>
+            <label><input type="checkbox" value="#">Aprender todo de Artes Gráficas</label>
+        </div>
+
+        <div class="div box5">
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <button type="submit" id="submit" class="btn-submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
